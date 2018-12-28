@@ -40,7 +40,7 @@ async def on_message(message):
         await client.send_message(message.channel, "https://cdn.discordapp.com/attachments/293757180161556480/525755441746149376/unknown.png")
 
 # Token for local development
-# Client.run(config.token)
+# client.run(config.token)
 
 # Token for Heroku
 client.run(os.getenv('TOKEN'))
