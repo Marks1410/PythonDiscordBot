@@ -38,7 +38,8 @@ async def on_message(message):
         await client.send_message(message.channel, "O-oooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A- JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA")
     if message.content == "!Current":
         await client.send_message(message.channel, "https://cdn.discordapp.com/attachments/293757180161556480/525755441746149376/unknown.png")
-
+    if message.content == "<a:hyperclap:528313470077108253>":
+        await client.send_message(message.channel, "<:rooNya:528281149470932992> <a:hyperclap:528313470077108253>")
 # Token for local development
 # client.run(config.token)
 
