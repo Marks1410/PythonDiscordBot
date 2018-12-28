@@ -1,3 +1,4 @@
+import os
 import config
 import discord
 from discord.ext.commands import Bot
@@ -35,5 +36,11 @@ async def on_message(message):
         await client.send_message(message.channel, "O-ooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A- JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA")
     if message.content == "O-ooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A- JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA":
         await client.send_message(message.channel, "O-oooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A- JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA")
+    if message.content == "!Current":
+        await client.send_message(message.channel, "https://cdn.discordapp.com/attachments/293757180161556480/525755441746149376/unknown.png")
 
-client.run(config.token)
+# Token for local development
+# Client.run(config.token)
+
+# Token for Heroku
+client.run(os.getenv('TOKEN'))
